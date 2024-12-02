@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 min-h-screen flex items-center justify-center p-4">
+
+  <!-- Desktop Section -->
+  <div class="hidden lg:flex bg-white w-4/5 h-3/4 rounded-lg shadow-lg">
+    <!-- Sidebar for Desktop -->
+    <div
+      class="text-white p-6 flex flex-col gap-8 lg:w-1/4 bg-no-repeat bg-cover bg-center bg-[url('../assets/images/bg-sidebar-desktop.svg')] m-2.5 rounded-lg">
+      <h2 class="text-lg uppercase font-semibold tracking-wide">Steps</h2>
+      <div class="flex flex-col gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white text-blue-600 font-semibold">
+            1
+          </div>
+          <p class="text-sm uppercase font-medium">Your Info</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-white">
+            2
+          </div>
+          <p class="text-sm uppercase font-medium">Select Plan</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-white">
+            3
+          </div>
+          <p class="text-sm uppercase font-medium">Add-ons</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-white">
+            4
+          </div>
+          <p class="text-sm uppercase font-medium">Summary</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Section for Desktop -->
+    <div class="w-2/3 p-8">
+      <h2 class="text-3xl font-bold text-gray-800">Finishing up</h2>
+      <p class="text-gray-500 mt-2">Double-check everything looks OK before confirming.</p>
+
+      <!-- Plan Summary -->
+      <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h3 class="font-semibold text-lg">
+              <span class="planName">Arcade</span> (<span class="planDuration">Yearly</span>)
+            </h3>
+           
+            <a href="./plan.html">
+              <button class="text-blue-600 hover:underline text-sm">Change</button>
+            </a>
+          </div>
+          <p class="planPrice font-bold text-gray-800">$90/yr</p>
+                </div>
+    
+        <hr class="border-gray-300">
+    
+        <div class="mt-6">
+          <div class="flex justify-between items-center">
+            <p class="onlineServiceText" class="text-gray-500">Online service</p>
+            <p class="onlineServicePrice" class="text-gray-800">+$10/yr</p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <p class="largerStorageText" class="text-gray-500">Larger storage</p>
+            <p class="largerStoragePrice" class="text-gray-800">+$20/yr</p>
+          </div>
+
+          <div class="flex justify-between items-center mt-4">
+            <p class="customizableProfileText" class="text-gray-500">Customizable Profile</p>
+            <p class="customizableProfilePrice" class="text-gray-800">+$30/yr</p>
+          </div>
+        </div>
+    
+        <hr class="border-gray-300 my-6">
+    
+        <div class="flex justify-between items-center">
+          <p class="font-semibold text-lg text-gray-500">Total (per year)</p>
+          <p id="totalPrice" class="font-bold text-2xl text-blue-600">$120/yr</p>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="flex justify-between mt-8">
+        <a href="./pickOn.html" class="text-gray-500 font-medium hover:underline">Go Back</a>
+        <a href="./thankyou.html" class="bg-blue-600 text-white py-2 px-6 rounded-md shadow hover:bg-blue-700 focus:ring focus:ring-blue-500">Confirm</a>
+       </div>
+    </div>
+  </div>
+
+    <!-- Mobile Section -->
+    <div class="bg-blue-100 w-full overflow-hidden sm:flex lg:hidden flex-col h-[100vh]">
+        <!-- Sidebar for Mobile -->
+        <div
+          class="text-white mt-0 p-6 flex flex-col gap-8 bg-no-repeat bg-cover bg-center bg-[url('../assets/images/bg-sidebar-mobile.svg')] h-[30vh]">
+          <div class="flex flex-row justify-center items-start gap-10 h-full">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600 font-semibold">
+                1
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-white">
+                2
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12  flex items-center justify-center rounded-full border-2 border-white">
+                3
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12  flex items-center justify-center rounded-full border-2 border-white">
+                4
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    <!-- Summary Section for Mobile -->
+    <div class="relative -mt-8 mx-auto w-11/12 max-w-md bg-white rounded-lg shadow-lg p-6 z-10">
+      <h2 class="text-2xl font-bold text-gray-800">Finishing up</h2>
+      <p class="text-gray-500 mt-2">Double-check everything looks OK before confirming.</p>
+
+      <!-- Plan Summary -->
+      <div class="mt-6 bg-gray-50 p-4 rounded-lg">
+        <div class="flex justify-between items-center mb-4">
+          <div>
+            
+            <h3 class="planName">Arcade</span>(<span class="planDuration">Yearly</span>)
+          </h3>
+         
+          <a href="./plan.html">
+            <button class="text-blue-600 hover:underline text-sm">Change</button>
+          </a>
+        </div>
+        <p class="planPrice font-bold text-gray-800">$90/yr</p>
+        </div>
+
+        <hr class="border-gray-300">
+
+        <div class="mt-6">
+          <div class="flex justify-between items-center">
+            <p class="onlineServiceText" class="text-gray-500">Online service</p>
+            <p class="onlineServicePrice" class="text-gray-800">+$10/yr</p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <p class="largerStorageText" class="text-gray-500">Larger storage</p>
+            <p class="largerStoragePrice" class="text-gray-800">+$20/yr</p>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <p class="customizableProfileText" class="text-gray-500">Customizable Profile</p>
+            <p class="customizableProfilePrice" class="text-gray-800">+$30/yr</p>
+          </div>
+        </div>
+
+        <hr class="border-gray-300 my-4">
+
+        <div class="flex justify-between items-center">
+          <p class="font-semibold text-lg text-gray-500">Total (per year)</p>
+          <p id="totalPrice" class="font-bold text-2xl text-blue-600">$120/yr</p>
+        </div>
+      </div>
+</div>
+     
+   
+    <!-- Navigation Buttons -->
+    <div class=" fixed bottom-0 left-0 right-0  bg-white flex justify-between items-center p-2">
+        
+      <a href="./pickOn.html" class="text-gray-500 font-medium hover:underline">Go Back</a>
+      <a href="./thankyou.html" class="bg-blue-600 text-white py-2 px-6 rounded-md shadow hover:bg-blue-700 focus:ring focus:ring-blue-500">Confirm</a>
+    
+    </div>
+ 
+  </div>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Retrieve the selected plan and add-ons from localStorage
+  const selectedPlan = JSON.parse(localStorage.getItem('selectedPlan'));
+ 
+  const selectedAddOns = JSON.parse(localStorage.getItem('selectedAddOns')) || [];
+
+  // Log to debug if data is being fetched correctly
+  console.log('selectedPlan:', selectedPlan);
+  console.log('selectedAddOns:', selectedAddOns);
+
+
+  // Select the elements for updating the plan and add-ons
+  const planNameElements = document.querySelectorAll('.planName');
+  const planDurationElements = document.querySelectorAll('.planDuration');
+  const planPriceElements = document.querySelectorAll('.planPrice');
+  const onlineServiceText = document.querySelectorAll('.onlineServiceText');
+  const onlineServicePrices = document.querySelectorAll('.onlineServicePrice');
+  const largerStorageText = document.querySelectorAll('.largerStorageText');
+  const largerStoragePrices = document.querySelectorAll('.largerStoragePrice');
+  const customizableProfileText = document.querySelectorAll('.customizableProfileText');
+  const customizableProfilePrices = document.querySelectorAll('.customizableProfilePrice');
+  const totalPriceElements = document.querySelectorAll('#totalPrice');
+
+  // Default add-ons and base price
+  const defaultAddOns = [
+    { name: 'Online service', price: 10, textElements: onlineServiceText, priceElements: onlineServicePrices },
+    { name: 'Larger storage', price: 20, textElements: largerStorageText, priceElements: largerStoragePrices },
+    { name: 'Customizable Profile', price: 30, textElements: customizableProfileText, priceElements: customizableProfilePrices }
+  ];
+
+  // Update the plan details
+
+  let billingPreference = localStorage.getItem('billingPreference')
+  planNameElements.forEach(el => el.textContent = selectedPlan.name);
+  planDurationElements.forEach(el => el.textContent = billingPreference);
+  let totalPrice = billingPreference === 'Yearly' ? selectedPlan.price * 10 : selectedPlan.price;
+
+// Update the plan details
+planNameElements.forEach(el => el.textContent = selectedPlan.name);
+planPriceElements.forEach(el => {
+  el.textContent = `$${billingPreference === 'Yearly' ? totalPrice : selectedPlan.price}/${billingPreference === 'Yearly' ? 'yr' : 'mo'}`;
+});
+  // Update add-ons and calculate total price
+  defaultAddOns.forEach(defaultAddOn => {
+    const selectedAddOn = selectedAddOns.find(addOn => addOn.name === defaultAddOn.name);
+    const price = selectedAddOn ? parseInt(selectedAddOn.price, 10) : 0;
+
+    if (price === 0) {
+      defaultAddOn.textElements.forEach(el => el.style.display = 'none');
+      defaultAddOn.priceElements.forEach(el => el.style.display = 'none');
+    } else {
+      defaultAddOn.textElements.forEach(el => el.style.display = 'block');
+      defaultAddOn.priceElements.forEach(el => {
+        el.textContent = `+$${price}/${selectedPlan.duration === 'Yearly' ? 'yr' : 'mo'}`;
+        el.style.display = 'block';
+      });
+      totalPrice += price;
+    }
+  });
+
+  // Update the total price
+  totalPriceElements.forEach(el => el.textContent = `$${totalPrice}/${selectedPlan.duration === 'Yearly' ? 'yr' : 'mo'}`);
+});
+
+</script>
+  
+  
+</html>

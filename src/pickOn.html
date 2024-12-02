@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pick Add-ons</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 min-h-screen flex items-center justify-center p-4">
+  <!-- Mobile Section -->
+  <div class="bg-blue-100 w-full overflow-hidden sm:flex lg:hidden flex-col h-[100vh] relative">
+    <!-- Sidebar for Mobile -->
+    <div class="text-white mt-0 p-6 flex flex-col gap-8 bg-no-repeat bg-cover bg-center bg-[url('../assets/images/bg-sidebar-mobile.svg')] h-[30vh]">
+      <div class="flex flex-row justify-center items-start gap-6 h-full">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600 font-semibold">1</div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-white">2</div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-white">3</div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-white">4</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Section for Mobile -->
+    <div class="relative -mt-8 mx-auto w-11/12 max-w-md bg-white rounded-lg shadow-lg p-6 z-10">
+      <h2 class="text-2xl font-bold text-gray-800">Pick add-ons</h2>
+      <p class="text-gray-500 mt-2">Add-ons help enhance your gaming experience.</p>
+
+      <!-- Add-on Options -->
+      <div class="mt-6 space-y-4">
+        <label class="border rounded-lg p-4 flex items-center justify-between cursor-pointer">
+          <div class="flex items-center gap-4">
+            <input type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+            <div>
+              <p class="font-semibold text-gray-800">Online service</p>
+              <p class="text-gray-500 text-sm">Access to multiplayer games</p>
+            </div>
+          </div>
+          <span class="price" data-price-monthly="+$2/mo" data-price-yearly="+$20/yr">+$20/yr</span>
+        </label>
+
+        <label class="border rounded-lg p-4 flex items-center justify-between cursor-pointer">
+          <div class="flex items-center gap-4">
+            <input type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+            <div>
+              <p class="font-semibold text-gray-800">Larger storage</p>
+              <p class="text-gray-500 text-sm">Extra 1TB of cloud save</p>
+            </div>
+          </div>
+          <span class="price" data-price-monthly="+$2/mo" data-price-yearly="+$20/yr">+$20/yr</span>
+        </label>
+
+        <label class="border rounded-lg p-4 flex items-center justify-between cursor-pointer">
+          <div class="flex items-center gap-4">
+            <input type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+            <div>
+              <p class="font-semibold text-gray-800">Customizable Profile</p>
+              <p class="text-gray-500 text-sm">Custom theme on your profile</p>
+            </div>
+          </div>
+          <span class="price" data-price-monthly="+$2/mo" data-price-yearly="+$20/yr">+$20/yr</span>
+        </label>
+      </div>
+    </div>
+ 
+        <div class=" fixed bottom-0 left-0 right-0  bg-white flex justify-between items-center p-2">
+        <a href="./plan.html" class="text-gray-500 font-medium hover:underline">Go Back</a>
+        <a href="./summary.html" class="bg-blue-600 text-white py-2 px-6 rounded-md shadow hover:bg-blue-700 focus:ring focus:ring-blue-500">Next Step</a>
+     
+      </div>
+  </div>
+
+  <!-- Desktop Section -->
+  <div class="bg-white shadow-lg rounded-lg max-w-4xl w-full overflow-hidden hidden lg:flex h-[500px] relative">
+    <!-- Sidebar for Desktop -->
+    <div class="text-white p-6 flex flex-col gap-8 lg:w-1/4 bg-no-repeat bg-cover bg-center bg-[url('../assets/images/bg-sidebar-desktop.svg')] m-2.5 rounded-lg">
+      <h2 class="text-lg uppercase font-semibold tracking-wide">Steps</h2>
+      <div class="flex flex-col gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-white">1</div>
+          <p class="text-sm uppercase font-medium">Your Info</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-white">2</div>
+          <p class="text-sm uppercase font-medium">Select Plan</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white text-blue-600 font-semibold">3</div>
+          <p class="text-sm uppercase font-medium">Add-ons</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-8 h-8 flex items-center justify-center rounded-full border-2 border-white">4</div>
+          <p class="text-sm uppercase font-medium">Summary</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="flex-1 p-8">
+      <h2 class="text-2xl font-bold text-gray-800">Pick add-ons</h2>
+      <p class="text-gray-500 mt-2">Add-ons help enhance your gaming experience.</p>
+<!-- Add-on Options -->
+<div class="mt-6 space-y-4">
+    <label class="flex items-center justify-between border rounded-lg p-4 cursor-pointer">
+      <div class="flex items-center gap-4">
+        <input type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+        <div>
+          <p class="font-semibold text-gray-800">Online service</p>
+          <p class="text-gray-500 text-sm">Access to multiplayer games</p>
+        </div>
+      </div>
+      <span class="price" data-price-monthly="+$1/mo" data-price-yearly="+$10/yr">+$10/yr</span>
+    </label>
+  
+    <label class="flex items-center justify-between border rounded-lg p-4 cursor-pointer">
+      <div class="flex items-center gap-4">
+        <input type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+        <div>
+          <p class="font-semibold text-gray-800">Larger storage</p>
+          <p class="text-gray-500 text-sm">Extra 1TB of cloud save</p>
+        </div>
+      </div>
+      <span class="price" data-price-monthly="+$2/mo" data-price-yearly="+$20/yr">+$20/yr</span>
+    </label>
+  
+    <label class="flex items-center justify-between border rounded-lg p-4 cursor-pointer">
+      <div class="flex items-center gap-4">
+        <input type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+        <div>
+          <p class="font-semibold text-gray-800">Customizable Profile</p>
+          <p class="text-gray-500 text-sm">Custom theme on your profile</p>
+        </div>
+      </div>
+      <span class="price" data-price-monthly="+$2/mo" data-price-yearly="+$20/yr">+$30/yr</span>
+    </label>
+  </div>
+  
+    
+
+
+  <!-- Navigation Buttons Outside and Fixed to the Bottom -->
+  <div class="mt-8 flex justify-between  items-center">
+    <a href="./plan.html" class="text-gray-500 font-medium hover:underline">Go Back</a>
+    <a href="./summary.html" class="bg-blue-600 text-white py-2 px-6 rounded-md shadow hover:bg-blue-700 focus:ring focus:ring-blue-500">Next Step</a>
+  </div>
+  </div>
+  </div>
+  
+</body>
+
+
+<script>
+// Function to get the adjusted price based on billing preference
+function getAdjustedPrice(name) {
+  const billingPreference = localStorage.getItem('billingPreference') || 'Monthly'; // Default to 'monthly'
+  const prices = {
+    'Online service': 10,
+    'Larger storage': 20,
+    'Customizable Profile': 30
+  };
+
+  let price = prices[name] || 0;
+  if (billingPreference === 'Yearly') {
+    price *= 10; // Multiply by 10 for yearly billing
+  }
+
+  return price;
+}
+
+// Event listener for checking/unchecking checkboxes and updating local storage
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+  checkbox.addEventListener('change', () => {
+    const name = checkbox.parentElement.querySelector('p').innerText;
+    const price = getAdjustedPrice(name); // Get adjusted price based on billing preference
+
+    if (checkbox.checked) {
+      // Retrieve existing selected add-ons from local storage or initialize an empty array
+      const selectedAddOns = JSON.parse(localStorage.getItem('selectedAddOns')) || [];
+      
+      // Check if the add-on is not already in the list
+      if (!selectedAddOns.some(item => item.name === name)) {
+        selectedAddOns.push({ name, price }); // Add new add-on with name and adjusted price
+        localStorage.setItem('selectedAddOns', JSON.stringify(selectedAddOns));
+      }
+    } else {
+      // Retrieve existing selected add-ons from local storage
+      let selectedAddOns = JSON.parse(localStorage.getItem('selectedAddOns')) || [];
+      
+      // Filter out the add-on that was unchecked
+      selectedAddOns = selectedAddOns.filter(item => item.name !== name);
+      localStorage.setItem('selectedAddOns', JSON.stringify(selectedAddOns));
+    }
+  });
+});
+
+
+
+  </script>
+  
+ 
+  
+
+</html>
